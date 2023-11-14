@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <title>. : Conversor de Moedas : .</title>
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <h1 class="page-title"> Conversor de Moedas</h1>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" alt="" class="page-logo">
+        </div>
+        <a href="https://alura.com.br/">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" class="alura-logo" alt="">
+            
+        </a>
+    </header>
+    <main class="main-container">
+        <div class="forms">
+            <label for="dolar-value">Valor do Dolar USD$</label>
+            <input type="text" name="dolar" id="dolar-value" placeholder="Valor em Dolar" required>
+            <label for="real-value">Valor em Real R$</label>
+            <input type="text" name="real" id="real-value" value="4.91" disabled>
+            <button id="calculate">Calcular</button>
+            <div id="conversion-result" class="result">
+            </div>           
+        </div>
+    </main>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-font: 'Roboto', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --text-color: #f0f0f0
+}
+
+body{
+    background-image: url(../Assets/img/coin-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+body>img {
+    margin: 0 10px;
+}
+
+img {
+    max-height: 250px;
+}
+
+/* HEADER */
+
+.head-container{
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title{
+    color: var(--text-color);
+    margin: 0 0 5px;
+}
+
+.page-subtitle{
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+.page-logo{
+    width: 200px;
+
+}
+
+.alura-logo{
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* FIM HEADER */
+
+/* MAIN */
+
+.main-container{
+    max-width: 100%;
+    display: block;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 20rem;
+    height: 400px;
+    background-color: rgb(143, 64, 226,0.3);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    gap: 10px;
+    padding: 30px 1px 10px 1px ;
+    margin-top: 10px;   
+}
+
+.forms label{
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.forms input{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--text-color);
+}
+
+#calculate{
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    color: var(--text-color);
+}
+
+#calculate:hover{
+    background-color: #da1e26;
+}
+
+.result{
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-top: 50px;
+}
